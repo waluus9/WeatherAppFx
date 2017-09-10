@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #EAEAEA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.dawidwalski.weatherapp.controllers.StatsController">
+   <children>
+      <ListView fx:id="listOfCities" prefHeight="500.0" prefWidth="153.0" style="-fx-background-color: #EAEAEA;" />
+      <BarChart fx:id="weatherChart" barGap="5.0" layoutX="153.0" layoutY="14.0" prefHeight="420.0" prefWidth="535.0" title="Weather">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="backButton" layoutX="632.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+      <TextField fx:id="averageTemp" layoutX="199.0" layoutY="443.0" prefHeight="25.0" prefWidth="399.0" promptText="Average temperature" />
+   </children>
+</AnchorPane>
